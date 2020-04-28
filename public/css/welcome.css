@@ -530,7 +530,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .about-container .background {
   min-height: 300px;
-  background: url(/images/about-img.jpg?81b4d02f7c9a30b89edaafafa329db46) center top no-repeat;
   margin-bottom: 10px;
 }
 
@@ -969,7 +968,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .php-email-form .sent-message {
-  display: none;
   color: #fff;
   background: #18d26e;
   text-align: center;
