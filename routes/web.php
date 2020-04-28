@@ -17,5 +17,7 @@ Route::get('/', 'WelcomeController@index');
 Route::post('/contact', 'WelcomeController@contact')->name('contact');
 
 Auth::routes();
+Route::get('login/discord', 'Auth\LoginController@redirectToProvider')->name('login.discord');
+Route::get('login/discord/callback', 'Auth\LoginController@handleProviderCallback')->name('login.discord.callback');
 
 Route::get('/home', 'HomeController@index')->name('home');

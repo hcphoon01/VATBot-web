@@ -54,8 +54,8 @@
           <li><a href="#stats">Stats</a></li>
           <li><a href="#call-to-action">Invite</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li><a href="{{ route('login') }}">Login</a></li>
-          <li><a href="{{ route('register') }}">Register</a></li>
+          <li><a href="{{ route('login.discord') }}">Login</a></li>
+          {{-- <li><a href="{{ route('register') }}">Register</a></li> --}}
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
