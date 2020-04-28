@@ -49928,15 +49928,51 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/welcome.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/welcome.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/welcome/animate.min.scss":
+/*!*************************************************!*\
+  !*** ./resources/sass/welcome/animate.min.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/welcome/venobox.scss":
+/*!*********************************************!*\
+  !*** ./resources/sass/welcome/venobox.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!***************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/welcome/animate.min.scss ./resources/sass/welcome/venobox.scss ./resources/sass/welcome.scss ***!
+  \***************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Users\harry\Documents\Projects\vatbot-web\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\harry\Documents\Projects\vatbot-web\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\harry\Documents\Projects\vatbot-web\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\harry\Documents\Projects\vatbot-web\resources\sass\welcome\animate.min.scss */"./resources/sass/welcome/animate.min.scss");
+__webpack_require__(/*! C:\Users\harry\Documents\Projects\vatbot-web\resources\sass\welcome\venobox.scss */"./resources/sass/welcome/venobox.scss");
+module.exports = __webpack_require__(/*! C:\Users\harry\Documents\Projects\vatbot-web\resources\sass\welcome.scss */"./resources/sass/welcome.scss");
 
 
 /***/ })
