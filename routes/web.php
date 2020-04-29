@@ -16,8 +16,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'WelcomeController@index');
 Route::post('/contact', 'WelcomeController@contact')->name('contact');
 
-Auth::routes();
-Route::get('login/discord', 'Auth\LoginController@redirectToProvider')->name('login.discord');
-Route::get('login/discord/callback', 'Auth\LoginController@handleProviderCallback')->name('login.discord.callback');
+//Auth::routes();
+Route::group([
+    'prefix' => 'login',
+    'as' => 'login.'
+], function () {
+    Route::get('/discord', 'Auth\LoginController@redirectToProvider')->name('discord');
+    Route::get('/discord/callback', 'Auth\LoginController@handleProviderCallback')->name('discord.callback');
+});
+
+Route::get('/test', function(){
+    return view('test');
+})->name('test');
+
+Route::group([
+    'prefix' => 'account',
+], function () {
+    Route::get('/', function(){
+        dd('yes');
+    })->name('account');
+});
 
 Route::get('/home', 'HomeController@index')->name('home');
