@@ -30,7 +30,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = '/home';
 
     /**
      * Create a new controller instance.
@@ -43,7 +43,7 @@ class LoginController extends Controller
     }
 
     /**
-     * Redirect the user to the GitHub authentication page.
+     * Redirect the user to the Discord authentication page.
      *
      * @return \Illuminate\Http\Response
      */
@@ -53,7 +53,7 @@ class LoginController extends Controller
     }
 
     /**
-     * Obtain the user information from GitHub.
+     * Obtain the user information from Discord.
      *
      * @return \Illuminate\Http\Response
      */
@@ -67,9 +67,11 @@ class LoginController extends Controller
 
         $authUser = $this->findOrCreateUser($user);
 
+        session(['discord_token' => $user->token]);
+
         Auth::login($authUser, true);
 
-        return redirect()->route('login');
+        return redirect()->route('home');
     }
 
     /**

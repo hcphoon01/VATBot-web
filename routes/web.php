@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'WelcomeController@index')->name('welcome');
 Route::post('/contact', 'WelcomeController@contact')->name('contact');
 
 //Auth::routes();
@@ -25,9 +25,7 @@ Route::group([
     Route::get('/discord/callback', 'Auth\LoginController@handleProviderCallback')->name('discord.callback');
 });
 
-Route::get('/test', function(){
-    return view('test');
-})->name('test');
+Route::get('logout')->uses('Auth\LogoutController@logout')->name('logout');
 
 Route::group([
     'prefix' => 'account',
@@ -37,4 +35,4 @@ Route::group([
     })->name('account');
 });
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
