@@ -2,16 +2,21 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\Models\User\User;
 use Exception;
+use App\Models\User\User;
+use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
 use App\Http\Controllers\Controller;
+use App\Http\Traits\CryptoTrait;
 use Illuminate\Support\Facades\Auth;
 use App\Providers\RouteServiceProvider;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use stdClass;
 
 class LoginController extends Controller
 {
+    use CryptoTrait;
     /*
     |--------------------------------------------------------------------------
     | Login Controller
@@ -55,9 +60,10 @@ class LoginController extends Controller
     /**
      * Obtain the user information from Discord.
      *
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
-    public function handleProviderCallback()
+    public function handleProviderCallback(Request $request)
     {
         try {
             $user = Socialite::driver('discord')->user();
@@ -67,6 +73,14 @@ class LoginController extends Controller
 
         $authUser = $this->findOrCreateUser($user);
 
+        $userObject = (object) [
+            'token' => $user->token,
+            'scope' => $user->id
+        ];
+
+        $encryptedToken = $this->encrypt($userObject, env('DISCORD_SECRET'));
+
+        session(['encrypted_discord_token' => $encryptedToken]);
         session(['discord_token' => $user->token]);
 
         Auth::login($authUser, true);

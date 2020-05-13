@@ -9,8 +9,7 @@
     
     <title>VATBot</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -20,7 +19,15 @@
     <div id="app">
         @include('includes.nav')
 
-        @yield('content')
+        <div class="container py-4">
+            @yield('content')
+        </div>
     </div>
 </body>
+<footer>
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
+
+    @yield('scripts')
+</footer>
 </html>

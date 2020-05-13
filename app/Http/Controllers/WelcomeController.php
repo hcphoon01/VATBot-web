@@ -13,6 +13,11 @@ class WelcomeController extends Controller
         return view('welcome');
     }
 
+    public function policy()
+    {
+        return view('policy');
+    }
+
     public function contact(Request $request)
     {
         $request->validate([

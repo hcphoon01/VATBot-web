@@ -54,7 +54,7 @@
           <li><a href="#stats">Stats</a></li>
           <li><a href="#call-to-action">Invite</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li><a href="{{ route('login.discord') }}">Login</a></li>
+          {{-- <li><a href="{{ route('login.discord') }}">Login</a></li> --}}
           {{-- <li><a href="{{ route('register') }}">Register</a></li> --}}
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -176,7 +176,7 @@
             <div class="info">
               <div>
                 <i class="fa fa-envelope"></i>
-                <p>info@vatbot</p>
+                <p><a href="mailto:&#105;&#110;&#102;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;">&#105;&#110;&#102;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;</a></p>
               </div>
             </div>
 
@@ -234,6 +234,9 @@
       </div>
       <div class="credits">
         Picture credits to Arvid Hansson
+      </div>
+      <div class="credits">
+        <a href="{{route('policy')}}">VATBot Terms and Conditions</a>
       </div>
     </div>
   </footer><!-- End Footer -->
