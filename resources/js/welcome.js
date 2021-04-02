@@ -129,7 +129,7 @@
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox();
-      $.get('http://localhost:4000/api/application', function(data) {
+      $.get('http://localhost:3000/details', function(data) {
         const hasNumber = /\d/;
         if (hasNumber.test(data.uptime)) {
           const uptimeObj = data.uptime.split(' ');
@@ -139,13 +139,13 @@
         } else {
           $('#uptime').text(data.uptime);
         }
-        $('#guildCount').text(data.guilds);
+        $('#guildCount').text(data.servers);
         $('#userCount').text(data.users);
         $('#latency').text(data.latency);
       }).done(function() {
         $('[data-toggle="counter-up"]').counterUp({
           delay: 10,
-          time: 1000
+          time: 2000
         });
       });
     });

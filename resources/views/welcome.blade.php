@@ -54,7 +54,7 @@
           <li><a href="#stats">Stats</a></li>
           <li><a href="#call-to-action">Invite</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          {{-- <li><a href="{{ route('login.discord') }}">Login</a></li> --}}
+          <li><a href="{{ route('login.discord') }}">Login</a></li>
           {{-- <li><a href="{{ route('register') }}">Register</a></li> --}}
         </ul>
       </nav><!-- #nav-menu-container -->
@@ -65,7 +65,7 @@
   <section id="hero">
     <div class="hero-container">
       <h1>Welcome to VATBot</h1>
-      {{-- <h2>VATBot is a Discord bot designed to integrate with the VATSIM Network</h2> --}}
+      <h2>VATBot is a Discord bot designed to integrate with the VATSIM Network</h2>
       <a href="#about" class="btn-get-started">Get Started</a>
     </div>
   </section><!-- End Hero Section -->
@@ -98,7 +98,7 @@
             <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
               <div class="icon"><i class="fas fa-headset"></i></i></div>
               <h4 class="title"><a href="">Active ATC</a></h4>
-              <p class="description">Get a list of all the Controllers active at a specific airport, along with all the departing/arriving traffic</p>
+              <p class="description">Get a list of all the controllers active at a specific airport, along with all the departing/arriving traffic</p>
             </div>
 
           </div>
@@ -152,7 +152,7 @@
             <p class="cta-text">Click the button to invite the bot to your Discord server, this requires you to have the 'Manage Server' permission on your server.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://discordapp.com/oauth2/authorize?client_id=630862807897997341&scope=bot&permissions=335916112">Invite</a>
+            <a class="cta-btn align-middle" href="https://discordapp.com/oauth2/authorize?client_id=630862807897997341&scope=bot&permissions=76864">Invite</a>
           </div>
         </div>
 

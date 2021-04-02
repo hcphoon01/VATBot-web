@@ -214,7 +214,7 @@
 
   $(document).ready(function () {
     $('.venobox').venobox();
-    $.get('http://localhost:4000/api/application', function (data) {
+    $.get('http://localhost:3000/details', function (data) {
       var hasNumber = /\d/;
 
       if (hasNumber.test(data.uptime)) {
@@ -226,13 +226,13 @@
         $('#uptime').text(data.uptime);
       }
 
-      $('#guildCount').text(data.guilds);
+      $('#guildCount').text(data.servers);
       $('#userCount').text(data.users);
       $('#latency').text(data.latency);
     }).done(function () {
       $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
-        time: 1000
+        time: 2000
       });
     });
   });
@@ -247,7 +247,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\harry\Documents\Projects\vatbot-web\resources\js\welcome.js */"./resources/js/welcome.js");
+module.exports = __webpack_require__(/*! D:\Projects\VATBot-web\resources\js\welcome.js */"./resources/js/welcome.js");
 
 
 /***/ })
