@@ -26,7 +26,8 @@ class WelcomeController extends Controller
             'subject' => 'required|max:255',
             'message' => 'required'
         ]);
-        //Mail::send(new ContactMail($request));
+        Mail::send(new ContactMail($request));
+        
         return back()->with('success', 'Thank you for your message.');
     }
 }
