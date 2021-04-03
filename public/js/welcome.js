@@ -214,7 +214,7 @@
 
   $(document).ready(function () {
     $('.venobox').venobox();
-    $.get('http://localhost:3000/details', function (data) {
+    $.get("".concat("http://localhost:3000", "/details"), function (data) {
       var hasNumber = /\d/;
 
       if (hasNumber.test(data.uptime)) {

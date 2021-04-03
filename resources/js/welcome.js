@@ -129,7 +129,7 @@
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
       $('.venobox').venobox();
-      $.get('http://localhost:3000/details', function(data) {
+      $.get(`${process.env.MIX_BOT_URL}/details`, function(data) {
         const hasNumber = /\d/;
         if (hasNumber.test(data.uptime)) {
           const uptimeObj = data.uptime.split(' ');
