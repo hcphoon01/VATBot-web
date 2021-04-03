@@ -100,12 +100,18 @@ class LoginController extends Controller
             return $authUser;
         }
 
+        $avatar = "https://eu.ui-avatars.com/api/?background=random&name=" . $discordUser->name;
+
+        if ($discordUser->avatar) {
+            $avatar = $discordUser->avatar;
+        }
+
         return User::create([
             'name' => $discordUser->name,
             'username' => $discordUser->nickname,
             'email' => $discordUser->email,
             'discord_id' => $discordUser->id,
-            'avatar' => $discordUser->avatar
+            'avatar' => $avatar
         ]);
     }
 }
