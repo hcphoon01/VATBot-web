@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,7 +13,8 @@
   <link href="favicon.ico" rel="icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   {{-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> --}}
@@ -26,14 +26,22 @@
   <link href="css/app.css" rel="stylesheet">
   <link href="css/welcome.css" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.10/js/superfish.min.js" integrity="sha256-7OVlofZqMjR9/tg1YsQo/3c2ZI3nKwAn3Y8ODyfgwyc=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.10.1/jquery.hoverIntent.min.js" integrity="sha256-CrEMvWblN4WeSnWiL9jjrFR+7JtCduEucOE3AIF3Y+k=" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.6/venobox.min.js" integrity="sha256-vRcA6HQ42C3q7wQlOYINRAMuAPpjAmdORTQ1wv/jwtk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha256-z6FznuNG1jo9PP3/jBjL6P3tvLMtSwiVAowZPOgo56U=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+    integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+    integrity="sha256-JtQPj/3xub8oapVMaIijPNoM0DHoAtgh/gwFYuN5rik=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    integrity="sha256-jDnOKIOq2KNsQZTcBTEnsp76FnfMEttF6AV2DF2fFNE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/superfish/1.7.10/js/superfish.min.js"
+    integrity="sha256-7OVlofZqMjR9/tg1YsQo/3c2ZI3nKwAn3Y8ODyfgwyc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.hoverintent/1.10.1/jquery.hoverIntent.min.js"
+    integrity="sha256-CrEMvWblN4WeSnWiL9jjrFR+7JtCduEucOE3AIF3Y+k=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.8.6/venobox.min.js"
+    integrity="sha256-vRcA6HQ42C3q7wQlOYINRAMuAPpjAmdORTQ1wv/jwtk=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -54,8 +62,7 @@
           <li><a href="#stats">Stats</a></li>
           <li><a href="#call-to-action">Invite</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li><a href="{{ route('login.discord') }}">Login</a></li>
-          {{-- <li><a href="{{ route('register') }}">Register</a></li> --}}
+          {{-- <li><a href="{{ route('login.discord') }}">Login</a></li> --}}
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -65,7 +72,6 @@
   <section id="hero">
     <div class="hero-container">
       <h1>Welcome to VATBot</h1>
-      <h2>VATBot is a Discord bot designed to integrate with the VATSIM Network</h2>
       <a href="#about" class="btn-get-started">Get Started</a>
     </div>
   </section><!-- End Hero Section -->
@@ -86,7 +92,8 @@
             <div class="icon-box wow fadeInUp">
               <div class="icon"><i class="fas fa-cloud-rain"></i></div>
               <h4 class="title"><a href="">Weather Request</a></h4>
-              <p class="description">Get the METAR or TAF for any airport, it can also provide a decoded version of the METAR or TAF.</p>
+              <p class="description">Get the METAR or TAF for any airport, it can also provide a decoded version of the
+                METAR or TAF.</p>
             </div>
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
@@ -98,7 +105,8 @@
             <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
               <div class="icon"><i class="fas fa-headset"></i></i></div>
               <h4 class="title"><a href="">Active ATC</a></h4>
-              <p class="description">Get a list of all the controllers active at a specific airport, along with all the departing/arriving traffic</p>
+              <p class="description">Get a list of all the controllers active at a specific airport, along with all the
+                departing/arriving traffic</p>
             </div>
 
           </div>
@@ -149,10 +157,12 @@
         <div class="row">
           <div class="col-lg-9 text-center text-lg-left">
             <h3 class="cta-title">Invite</h3>
-            <p class="cta-text">Click the button to invite the bot to your Discord server, this requires you to have the 'Manage Server' permission on your server.</p>
+            <p class="cta-text">Click the button to invite the bot to your Discord server, this requires you to have the
+              'Manage Server' permission on your server.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="https://discordapp.com/oauth2/authorize?client_id=630862807897997341&scope=bot&permissions=76864">Invite</a>
+            <a class="cta-btn align-middle"
+              href="https://discordapp.com/oauth2/authorize?client_id=630862807897997341&scope=bot&permissions=76864">Invite</a>
           </div>
         </div>
 
@@ -164,19 +174,20 @@
       <div class="container wow fadeInUp">
         <div class="section-header">
           <h3 class="section-title">Contact</h3>
-          <p class="section-description"></p>
         </div>
       </div>
 
       <div class="container wow fadeInUp mt-5">
         <div class="row justify-content-center">
 
-          <div class="col-lg-3 col-md-4">
+          <div class="">
 
             <div class="info">
               <div>
                 <i class="fa fa-envelope"></i>
-                <p><a href="mailto:&#105;&#110;&#102;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;">&#105;&#110;&#102;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;</a></p>
+                <p><a
+                    href="mailto:&#104;&#101;&#108;&#108;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;">&#104;&#101;&#108;&#108;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;</a>
+                </p>
               </div>
             </div>
 
@@ -186,31 +197,6 @@
               <a href="https://discord.gg/Htzybqa" class="discord"><i class="fab fa-discord"></i></a>
             </div>
 
-          </div>
-
-          <div class="col-lg-5 col-md-8">
-            <div class="form">
-              <form action="{{route('contact')}}" method="post" role="form" class="php-email-form">
-                @csrf
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validate"></div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
-            </div>
           </div>
 
         </div>
