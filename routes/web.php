@@ -19,23 +19,22 @@ Route::get('/policy', 'WelcomeController@policy')->name('policy');
 Route::post('/contact', 'WelcomeController@contact')->name('contact');
 // Route::get('/test')->uses('HomeController@test');
 
-Auth::routes();
-Route::group([
-    'prefix' => 'login',
-    'as' => 'login.'
-], function () {
-    Route::get('/discord', 'Auth\LoginController@redirectToProvider')->name('discord');
-    Route::get('/discord/callback', 'Auth\LoginController@handleProviderCallback')->name('discord.callback');
-});
+// Route::group([
+//     'prefix' => 'login',
+//     'as' => 'login.'
+// ], function () {
+//     Route::get('/discord', 'Auth\LoginController@redirectToProvider')->name('discord');
+//     Route::get('/discord/callback', 'Auth\LoginController@handleProviderCallback')->name('discord.callback');
+// });
 
-Route::get('logout')->uses('Auth\LogoutController@logout')->name('logout');
+// Route::get('logout')->uses('Auth\LogoutController@logout')->name('logout');
 
-Route::group([
-    'prefix' => 'account',
-], function () {
-    Route::get('/', function(){
-        dd('yes');
-    })->name('account');
-});
+// Route::group([
+//     'prefix' => 'account',
+// ], function () {
+//     Route::get('/', function(){
+//         dd('yes');
+//     })->name('account');
+// });
 
 Route::get('/home', 'Home\HomeController@index')->name('home')->middleware('auth');
