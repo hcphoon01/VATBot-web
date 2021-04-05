@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\ContactMail;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 
 class WelcomeController extends Controller
@@ -27,7 +28,13 @@ class WelcomeController extends Controller
             'message' => 'required'
         ]);
         Mail::send(new ContactMail($request));
-        
+
         return back()->with('success', 'Thank you for your message.');
+    }
+
+    public function details()
+    {
+        $response = Http::get(config('services.discord.bot_url') . '/details');
+        return $response->json();
     }
 }

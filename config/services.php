@@ -32,7 +32,8 @@ return [
     'discord' => [
         'client_id' => env('DISCORD_ID'),
         'client_secret' => env('DISCORD_SECRET'),
-        'redirect' => env('DISCORD_REDIRECT_URI')
+        'redirect' => env('DISCORD_REDIRECT_URI'),
+        'bot_url' => env('BOT_URL')
     ],
 
 ];

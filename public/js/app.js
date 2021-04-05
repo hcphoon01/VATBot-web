@@ -49729,11 +49729,11 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Projects\VATBot-web\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! D:\Projects\VATBot-web\resources\sass\app.scss */"./resources/sass/app.scss");
-__webpack_require__(/*! D:\Projects\VATBot-web\resources\sass\welcome\animate.min.scss */"./resources/sass/welcome/animate.min.scss");
-__webpack_require__(/*! D:\Projects\VATBot-web\resources\sass\welcome\venobox.scss */"./resources/sass/welcome/venobox.scss");
-module.exports = __webpack_require__(/*! D:\Projects\VATBot-web\resources\sass\welcome.scss */"./resources/sass/welcome.scss");
+__webpack_require__(/*! C:\Users\harry\Documents\Projects\VATBot-web\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\harry\Documents\Projects\VATBot-web\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\harry\Documents\Projects\VATBot-web\resources\sass\welcome\animate.min.scss */"./resources/sass/welcome/animate.min.scss");
+__webpack_require__(/*! C:\Users\harry\Documents\Projects\VATBot-web\resources\sass\welcome\venobox.scss */"./resources/sass/welcome/venobox.scss");
+module.exports = __webpack_require__(/*! C:\Users\harry\Documents\Projects\VATBot-web\resources\sass\welcome.scss */"./resources/sass/welcome.scss");
 
 
 /***/ })

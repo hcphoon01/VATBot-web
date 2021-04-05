@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'WelcomeController@index')->name('welcome');
+Route::get('/details', 'WelcomeController@details')->name('details');
 Route::get('/policy', 'WelcomeController@policy')->name('policy');
 Route::post('/contact', 'WelcomeController@contact')->name('contact');
 // Route::get('/test')->uses('HomeController@test');

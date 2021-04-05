@@ -214,7 +214,7 @@
 
   $(document).ready(function () {
     $('.venobox').venobox();
-    $.get("".concat("http://localhost:3000", "/details"), function (data) {
+    $.get("/details", function (data) {
       var hasNumber = /\d/;
 
       if (hasNumber.test(data.uptime)) {
@@ -247,7 +247,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\Projects\VATBot-web\resources\js\welcome.js */"./resources/js/welcome.js");
+module.exports = __webpack_require__(/*! C:\Users\harry\Documents\Projects\VATBot-web\resources\js\welcome.js */"./resources/js/welcome.js");
 
 
 /***/ })
