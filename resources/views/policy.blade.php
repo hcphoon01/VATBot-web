@@ -8,8 +8,8 @@
     VATBot is a Discord bot designed to integrate with the VATSIM network.
 </p>
 <p>
-    VATBot is not a provider of real-world flight instruction and nothing which 
-    you find on our services should <strong>ever</strong> be used in relation to 
+    VATBot is not a provider of real-world flight instruction and nothing which
+    you find on our services should <strong>ever</strong> be used in relation to
     flying a real aircraft in the real world - doing so is both unsafe and unlawful.
 </p>
 <p>
@@ -91,7 +91,8 @@
     relevant to VATBot, flight simulation and/or VATBot’s partners, and
     should not be considered spam. However, should you not wish to receive any
     non-essential communication, please send an email to
-    <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;">&#105;&#110;&#102;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;</a>
+    <a
+        href="mailto:&#105;&#110;&#102;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;">&#105;&#110;&#102;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;</a>
     from the email address you wish to be removed from mailing lists. You will
     still receive emails regarding your account. Unregistered users will never
     receive any communication from VATBot, nor are email addresses obtainable
@@ -117,6 +118,12 @@
     <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;">&#105;&#110;&#102;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;</a>,
     users will be given a copy of all the data which VATBot holds about them,
     in compliance with the EU General Data Protection Regulation.
+</p>
+
+<p>
+    If a user would like to terminate their VATBot account at any point, an email to
+    <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;">&#105;&#110;&#102;&#111;&#64;&#118;&#97;&#116;&#98;&#111;&#116;&#46;&#110;&#101;&#116;</a>
+    will allow them to start the process, which will involve the team removing all of their data and any data relating to their account(s).
 </p>
 
 <h3>Code of Conduct</h3>
